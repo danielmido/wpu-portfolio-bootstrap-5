@@ -138,6 +138,25 @@
         </div>
       </div>
     </div>
+
+    <section id="my-device">
+      <div class="container">
+        <div class="row text-center mb-4 mt-5">
+          <h2>My Device</h2>
+        </div>
+        <!-- Content -->
+        <div class="row justify-content-center">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="device-box">
+              <h4 class="device-name">Yoga Duet 7i</h4>
+              <img src="img/device/1.png" alt="Yoga Duet 7i" class="device-img">
+              <a href="#" class="device-detail-button btn btn-light">Show Details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffffff" fill-opacity="1"
         d="M0,96L48,133.3C96,171,192,245,288,234.7C384,224,480,128,576,80C672,32,768,32,864,53.3C960,75,1056,117,1152,133.3C1248,149,1344,139,1392,133.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -302,6 +321,16 @@
 
 
   -->
+
+  <!-- Tilt Js -->
+  <script type="text/javascript" src="vanilla-tilt.min.js"></script>
+  <script type="text/javascript">
+    VanillaTilt.init(document.querySelectorAll(".device-box"), {
+      max: 20,
+      speed: 2000,
+      glare: true,
+    });
+  </script>
 
   <!-- Script Contact Form -->
   <script>
